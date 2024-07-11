@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="content-wrapper">
+    <h1>Deteksi Berita</h1>
+    <form action="{{ url_for('deteksi') }}" method="post">
+        <label for="teks_berita">Masukkan teks berita:</label><br>
+        <textarea id="teks_berita" name="teks_berita" rows="5" cols="50"></textarea><br><br>
+        <input type="submit" value="Deteksi">
+    </form>
+</div>
+{% endblock %}

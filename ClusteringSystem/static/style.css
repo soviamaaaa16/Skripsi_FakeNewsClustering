@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa; /* Warna latar belakang keseluruhan situs */
+    color: #343a40; /* Warna teks utama */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+    min-height: 100vh;
+}
+
+.sidebar {
+    background-color: #6c757d; /* Warna sidebar */
+    width: 200px; /* Lebar sidebar yang lebih kecil */
+    padding: 15px; /* Padding sidebar yang lebih kecil */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    position: fixed; /* Fix the sidebar */
+    top: 0;
+    bottom: 0;
+    left: 0;
+    overflow-y: auto;
+}
+
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar a {
+    margin: 10px 0;
+    text-decoration: none;
+    color: #ffffff; /* Warna teks sidebar */
+    font-weight: bold;
+    font-size: 1.1em; /* Ukuran teks sidebar yang sedikit lebih kecil */
+    text-align: center;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    margin-left: 220px; /* Make space for sidebar */
+    margin-bottom: 30px; /* Make space for footer */
+}
+
+footer {
+    background-color: #343a40; /* Warna footer */
+    padding: 8px; /* Padding footer yang lebih kecil */
+    text-align: center;
+    width: 100%;
+    color: #ffffff; /* Warna teks footer */
+    position: fixed; /* Fix the footer */
+    bottom: 0;
+    left: 0;
+}
+
+h1 {
+    color: #dc3545; /* Warna judul utama */
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.content-wrapper {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0 auto 40px;
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.intro-text {
+    color: #495057; /* Warna teks konten */
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.features-title {
+    color: #dc3545; /* Warna judul fitur */
+    font-size: 1.8em;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.features-list {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.2em;
+    color: #6c757d; /* Warna teks fitur */
+    line-height: 1.6;
+}
+
+.features-list li {
+    margin-bottom: 10px;
+}
+
+.features-list li strong {
+    color: #dc3545; /* Warna teks penting dalam fitur */
+}
+
+.contact-text {
+    font-size: 1.2em;
+    margin-top: 30px;
+    color: #495057; /* Warna teks kontak */
+    line-height: 1.6;
+}
